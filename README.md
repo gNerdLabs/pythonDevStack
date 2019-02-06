@@ -15,7 +15,14 @@ using an existing app:
 
 or just start fresh:
 
-`mkdir app`
+```
+mkdir app
+echo "# my new app thing" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+etc ...
+```
 
 then start it up!
 
