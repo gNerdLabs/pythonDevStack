@@ -4,16 +4,16 @@ services:
 
   server:
     image: gnerd/python-dev-box:latest
-    # command: gunicorn -b 0.0.0.0:8000 todosapp.wsgi:application
+    # command: gunicorn -b 0.0.0.0:5283 someapp:app # maybe use this later?  
     depends_on:
       - postgres
     volumes:
       - ./app:/app
       - ./shared:/host
     ports:
-      - "8000:8000"
+      - "801:5283"
     environment:
-      DATABASE_URL: postgres://pguser@postgres/database
+      DBURI: postgres://pguser@postgres/database
     stdin_open: true
     tty: true
 

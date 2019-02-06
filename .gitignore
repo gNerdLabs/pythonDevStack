@@ -1,4 +1,1 @@
 app/*
-!app/.gitkeep
-shared/*
-!shared/.gitkeep
