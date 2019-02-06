@@ -11,7 +11,7 @@ cd newEnv
 
 `newEnv` is whatever you would like to call it.
 
-personally I would `rm -rf .git` and only manage the contents of the `./app` dir you are about to create.
+personally I would `rm -rf .git` and only track the contents of the `./app` dir you are about to create.
 
 using an existing app:
 
@@ -23,6 +23,7 @@ or just start fresh:
 
 ```
 mkdir app
+cd app
 echo "# my new app thing" >> README.md
 git init
 git add README.md
